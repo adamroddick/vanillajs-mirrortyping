@@ -1,15 +1,27 @@
-<html>
+<html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
     <body style="margin: 1.5rem;">
 
         <h3>Space Company</h3>
-        <button id="startcounter" class="function">Show Metal</button>
-        <button id="metalMultiplier" class="function">Create Metalsmith</button>
+        <button id="getmetal" class="function">Get Metal</button>
+        <button id="getmetalworker" class="function">Create Metalsmith</button>
 
         
         <div id="counter"></div>
+        <div class="card" style="pointer-events:none">
+            <div id="logdiv" class="card-body">
+                <h5 class="card-title">Captain's Log</h5>
+                <p class="card-text">
+                    <table class="table">
+                        <tbody id="logtable"></tbody>
+                    </table>
+                </p>
+                <a href="#" class="card-link">Collapse Log</a>
+            </div>
+        </div>
 
         <script src='reef.js' charset='utf-8' type='application/javascript'></script>
         <script src='counter.js' charset='utf-8' type='application/javascript'></script>
